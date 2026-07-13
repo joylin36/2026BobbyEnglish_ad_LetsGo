@@ -20,7 +20,7 @@
         body {
             background-color: #f4f7f6;
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             color: #333;
             line-height: 1.6;
         }
@@ -30,56 +30,48 @@
             margin: 0 auto;
             background: #fff;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
-        /* 🚀 旗艦級頂部主視覺大圖艙 */
-        .ad-banner-area {
-            width: 100%;
-            background-color: var(--uci-blue);
-            text-align: center;
-        }
-
-        .ad-banner-img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
+        /* 🚀 國際皇家級高質感頂部抬頭艙（乾淨純代碼排版，不跑版不跑位） */
         .ad-main-title-box {
-            background: linear-gradient(180deg, rgba(27,61,109,0.9) 0%, rgba(27,61,109,1) 100%);
+            background: linear-gradient(180deg, #1b3d6d 0%, #122b4f 100%);
             color: #fff;
-            padding: 25px 20px;
+            padding: 35px 25px;
             text-align: center;
-            border-bottom: 4px solid var(--uci-gold);
+            border-bottom: 5px solid var(--uci-gold);
         }
 
         .ad-main-title-box h1 {
-            margin: 0 0 8px 0;
-            font-size: 24px;
+            margin: 0 0 10px 0;
+            font-size: 23px;
             font-weight: bold;
             color: var(--uci-gold);
+            line-height: 1.4;
         }
 
         .ad-main-title-box h2 {
             margin: 0;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: normal;
             letter-spacing: 0.5px;
-            opacity: 0.9;
+            opacity: 0.95;
+            line-height: 1.5;
         }
 
         .ad-body {
-            padding: 30px 40px;
+            padding: 35px 40px;
         }
 
-        /* 💡 PYP 國際特訓亮點艙 */
+        /* 💡 PYP 國際特訓亮點艙 + 全新去背商標完美焊接對齊 */
         .pyp-section {
             display: flex;
             gap: 20px;
             background-color: rgba(0, 119, 182, 0.06);
             border-left: 5px solid var(--pyp-teal);
             padding: 20px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             border-radius: 0 6px 6px 0;
             align-items: center;
             text-align: left;
@@ -90,9 +82,9 @@
         }
 
         .pyp-text h3 {
-            margin: 0 0 8px 0;
+            margin: 0 0 6px 0;
             color: var(--pyp-teal);
-            font-size: 17px;
+            font-size: 16px;
             font-weight: bold;
         }
 
@@ -100,65 +92,64 @@
             margin: 0;
             font-size: 13px;
             color: #444;
+            line-height: 1.6;
         }
 
+        /* 🔒 精准鎖定全新去背商標之黃金範圍（大小完全與原本貓咪 110px 一模一樣） */
         .pyp-side-img {
             width: 110px;
             height: 110px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            object-fit: contain; /* 去背檔最佳相容縮放晶片 */
+            flex-shrink: 0;
         }
 
         .section-title {
             background-color: var(--uci-blue);
             color: #fff;
             padding: 8px 12px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
             margin: 35px 0 15px 0;
             border-radius: 4px;
             display: inline-block;
         }
 
-        /* 🔒 守護方格地基：100% 對齊 Joy 最愛的方格質感 */
+        /* 🔒 鋼鐵方格地基：死死鎖定傳統表格排版，100% 橫向不壓扁、不跑位 */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-size: 13px;
-            table-layout: fixed;
+            table-layout: fixed; /* 強制剛性對齊，絕不跑版 */
+            word-wrap: break-word;
         }
 
         th, td {
             border: 1px solid var(--uci-blue);
-            padding: 10px;
+            padding: 12px 10px;
             vertical-align: middle;
             text-align: left;
+            line-height: 1.6;
         }
 
         th {
             background-color: #f0f4f8;
             color: var(--uci-blue);
             font-weight: bold;
-            line-height: 1.4;
             text-align: center;
         }
 
-        .inline-img-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
+        th span.zh-title {
+            font-size: 13px;
+            display: block;
+            margin-bottom: 2px;
+            font-weight: bold;
         }
-
-        .inline-grid-img {
-            width: 100%;
-            max-width: 220px;
-            height: auto;
-            border-radius: 6px;
-            border: 1px solid #ddd;
+        th span.en-title {
+            font-size: 10px;
+            display: block;
+            font-weight: normal;
+            opacity: 0.85;
         }
 
         .app-grid {
@@ -184,57 +175,66 @@
 
         .app-name {
             font-weight: bold;
-            font-size: 15px;
+            font-size: 14px;
             color: var(--uci-blue);
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
         .app-desc {
             font-size: 12px;
-            color: #666;
+            color: #555;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .app-desc-en {
+            font-size: 11px;
+            color: #777;
+            font-style: italic;
+            display: block;
+            margin-top: 4px;
             line-height: 1.4;
         }
 
         .cta-box {
             background-color: rgba(254, 204, 7, 0.12);
             border: 2px dashed var(--uci-gold);
-            padding: 25px;
+            padding: 30px;
             text-align: center;
             border-radius: 8px;
-            margin-top: 35px;
+            margin-top: 40px;
         }
 
+        /* 🎯 智慧縮小按盾：完美鎖定最大寬度為超精緻的 180px，全載具完美比例 */
         .cta-join-btn-img {
             width: 100%;
-            max-width: 280px;
+            max-width: 180px;
             height: auto;
             cursor: pointer;
             transition: transform 0.2s, filter 0.2s;
-            margin-top: 10px;
+            margin-top: 15px;
+            display: inline-block;
         }
 
         .cta-join-btn-img:hover {
-            transform: scale(1.03);
+            transform: scale(1.04);
             filter: brightness(1.05);
         }
 
         @media (max-width: 768px) {
-            .ad-body { padding: 20px 15px; }
-            .pyp-section { flex-direction: column; text-align: center; }
-            .app-grid { grid-template-columns: 1fr; gap: 10px; }
+            body { padding: 10px 0; }
+            .ad-body { padding: 25px 15px; }
+            .pyp-section { flex-direction: column; text-align: center; gap: 15px; }
+            .app-grid { grid-template-columns: 1fr; gap: 12px; }
             table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-            td { min-width: 180px; }
-            th { min-width: 120px; }
+            td { min-width: 200px; }
+            th { min-width: 130px; }
         }
     </style>
 </head>
 <body>
 
 <div class="ad-container">
-    <div class="ad-banner-area">
-        <img src="BobbyEnglishSchool.jpg" alt="巴比美語補習班官方大抬頭" class="ad-banner-img">
-    </div>
-
     <div class="ad-main-title-box">
         <h1>【Let's Go 1】美語不害怕！巴比老師的遊戲大膽說1級班</h1>
         <h2>Let's Go! Play & Speak English - Speak English Boldly through Games with Teacher Bobby (Level 1)</h2>
@@ -245,34 +245,56 @@
             <div class="pyp-text">
                 <h3>🌍 國際學校等級 ｜ IB PYP 探究教學精神導入</h3>
                 <p>我們不只教孩子背英文，更引導孩子成為「探究者 (Inquirers)」。配合單元主題，啟發孩子的好奇心，用美語去探索世界、表達自我，從小建立適應未來的國際素養！</p>
+                <span style="font-size: 11px; color:#555; font-style:italic; display:block; margin-top:3px;">We guide kids to become active Inquirers. Driven by curiosity, students explore the world and express themselves in English, cultivating global competence from a young age!</span>
             </div>
-            <img src="cat with book.jpg" alt="巴比美語探究貓貓" class="pyp-side-img">
+            <img src="BOBBY ENGLISH SCHOOL_去背檔.png" alt="巴比美語補習班專屬去背標章" class="pyp-side-img">
         </div>
 
         <div class="section-title">✨ 核心課程規格與方格明細 / Course Overview</div>
         <table>
             <tbody>
                 <tr>
-                    <th style="width: 20%;">課程科目內容<br><span style="font-size:10px; font-weight:normal;">Course Content</span></th>
-                    <td colspan="3"><b>兒童美語初階特訓</b> (涵蓋 Phonics 自然發音進階、生活情境對話、聽說讀寫強化訓練)</td>
+                    <th style="width: 22%;"><span class="zh-title">課程科目內容</span><span class="en-title">Course Content</span></th>
+                    <td colspan="3">
+                        <b>兒童美語初階特訓</b> (涵蓋 Phonics 自然發音進階、生活情境對話、聽說讀寫強化訓練)<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Primary English Intensive Training (Advanced Phonics, situational dialogues, and balanced skills optimization).</span>
+                    </td>
                 </tr>
                 <tr>
-                    <th>標準上課時段<br><span style="font-size:10px; font-weight:normal;">Schedule</span></th>
-                    <td><b>每週一、週三、週五 1:30 PM - 3:30 PM</b></td>
-                    <th style="width: 20%;">每週授課時數<br><span style="font-size:10px; font-weight:normal;">Weekly Hours</span></th>
-                    <td>每週3次，每次2小時，共計6小時</td>
+                    <th><span class="zh-title">標準上課時段</span><span class="en-title">Class Schedule</span></th>
+                    <td style="width: 28%;">
+                        <b>每週一、週三、週五<br>1:30 PM - 3:30 PM</b><br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Every Mon., Wed., Fri.</span>
+                    </td>
+                    <th style="width: 22%;"><span class="zh-title">每週授課時數</span><span class="en-title">Weekly Hours</span></th>
+                    <td style="width: 28%;">
+                        <b>每週3次，每次2小時，共計6小時</b><br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">3 times/week, 6 hours total.</span>
+                    </td>
                 </tr>
                 <tr>
-                    <th>常態核定學費<br><span style="font-size:10px; font-weight:normal;">Tuition Fee</span></th>
-                    <td>NT$ 31,620 元 (當期共 51 堂課)</td>
-                    <th>固定教材費用<br><span style="font-size:10px; font-weight:normal;">Materials Fee</span></th>
-                    <td>NT$ 1,268 元 (含進階正規教材)</td>
+                    <th><span class="zh-title">當期核定學費</span><span class="en-title">Tuition Fee</span></th>
+                    <td>
+                        <b>NT$ 31,620 元</b> (當期共 51 堂課)<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">For 51 lessons per term.</span>
+                    </td>
+                    <th><span class="zh-title">固定教材費用</span><span class="en-title">Materials Fee</span></th>
+                    <td>
+                        <b>NT$ 1,268 元</b> (含正規進階教材)<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Includes standard curriculum text.</span>
+                    </td>
                 </tr>
                 <tr>
-                    <th>當期行政雜費<br><span style="font-size:10px; font-weight:normal;">Miscellaneous</span></th>
-                    <td>NT$ 3,060 元</td>
-                    <th>全期應繳總計<br><span style="font-size:10px; font-weight:normal;">Grand Total</span></th>
-                    <td style="color:#c00; font-weight:bold; font-size:14px;">NT$ 35,948 元</td>
+                    <th><span class="zh-title">當期行政雜費</span><span class="en-title">Miscellaneous Fee</span></th>
+                    <td>
+                        <b>NT$ 3,060 元</b><br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Administrative & operations.</span>
+                    </td>
+                    <th><span class="zh-title">全期應繳總計</span><span class="en-title">Grand Total</span></th>
+                    <td style="color:#c00; font-weight:bold;">
+                        <b>NT$ 35,948 元</b><br>
+                        <span style="font-size:11px; color:#c00; font-style:italic;">All-inclusive package price.</span>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -282,61 +304,61 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 22%;">探究主題與進度<br><span style="font-size:10px; font-weight:normal;">PYP Theme</span></th>
-                    <th style="width: 33%;">聽說讀寫特訓內容<br><span style="font-size:10px; font-weight:normal;">Core Content</span></th>
-                    <th style="width: 45%;">神級 App 搭配教學實踐安排<br><span style="font-size:10px; font-weight:normal;">EdTech App Integration</span></th>
+                    <th style="width: 24%;"><span class="zh-title">探究主題與進度</span><span class="en-title">PYP Theme & Units</span></th>
+                    <th style="width: 36%;"><span class="zh-title">聽說讀寫特訓內容</span><span class="en-title">Core Skills & Content</span></th>
+                    <th style="width: 40%;"><span class="zh-title">神級 App 搭配教學安排</span><span class="en-title">EdTech App Integration</span></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td style="font-weight: bold; color: var(--pyp-teal);">
                         🚀 主題 1：字母發音與自然發音探究<br>
-                        <span style="font-size:11px; font-weight:normal; color:#666;">(Phonics)</span>
+                        <span style="font-size:11px; font-weight:normal; color:#666; font-style:italic;">(Alphabet & Phonics)</span>
                     </td>
                     <td>
-                        <b>自然發音基礎與單字直覺拼讀：</b><br>從 A-Z 的正確字母發音、筆順，到進階 Phonics 基礎自然發音結合，讓低段孩子達到「見字能讀、聽音能拼」的直覺美語體質。
+                        <b>自然發音基礎與單字直覺拼讀：</b><br>
+                        從 A-Z 的正確字母發音、筆順，到進階 Phonics 基礎自然發音結合，讓低段孩子達到「見字能讀、聽音能拼」的直覺美語體質。<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Mastering A-Z pronunciation and stroke order paired with foundational Phonics blending to build intuitive reading and spelling habits.</span>
                     </td>
                     <td>
-                        🔹 <b>Epic! 探究閱讀：</b>精選全球初階發音有聲繪本，讓孩子在課堂上進行圖像與聲音的探究連結。<br>
-                        🔹 <b>Seesaw 成果牆：</b>孩子錄下自己的 Phonics 發音短片，建立專屬的個人數位發音資料庫！
+                        🔹 <b>Epic! 探究閱讀：</b>精選全球初階發音有聲繪本，進行圖像與聲音的探究連結。<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Audio picture books to bridge phonics sounds and imagery.</span><br>
+                        🔹 <b>Seesaw 成果牆：</b>孩子錄下自己的 Phonics 發音短片，建立個人數位發音資料庫！<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Recording short clips to track phonetic milestones.</span>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold; color: var(--pyp-teal);">
                         🗣️ 主題 2：生活問候與情境對話大膽說<br>
-                        <span style="font-size:11px; font-weight:normal; color:#666;">(Greetings)</span>
+                        <span style="font-size:11px; font-weight:normal; color:#666; font-style:italic;">(Greetings & Dialogues)</span>
                     </td>
                     <td>
-                        <b>巴比老師的遊戲大膽說：</b><br>涵蓋早安問候、名字介紹、年齡詢問與教室常用美語。拒絕紙筆死背，讓孩子在最自然的生活情境中大方開口。
+                        <b>巴比老師的遊戲大膽說：</b><br>
+                        涵蓋早安問候、名字介紹、年齡詢問與教室常用美語。拒絕紙筆死背，讓孩子在最自然的生活情境中大方開口。<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Immersive situational roleplay covering daily greetings, introductions, age, and classroom commands to bypass rote memorization.</span>
                     </td>
                     <td>
-                        🔹 <b>Nearpod 互動課堂：</b>融入智慧連網互動遊戲與即時搶答，讓孩子在與巴比老師的遊戲中高頻開口、大膽說英語。<br>
-                        🔹 <b>Seesaw 親子連動：</b>回家後與家長進行生活情境英語對話錄音，一鍵回傳給 Joy 老師鼓勵！
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <div class="app-grid" style="margin-bottom: 0; margin-top: 5px;">
-                            <div class="inline-img-container">
-                                <img src="let's go 1 girl.jpg" alt="學員快樂學習照" class="inline-grid-img">
-                            </div>
-                            <div class="inline-img-container" style="grid-column: span 2;">
-                                <img src="kids.jpg" alt="孩子們精緻小班互動" class="inline-grid-img" style="max-width: 100%;">
-                            </div>
-                        </div>
+                        🔹 <b>Nearpod 互動課堂：</b>融入智慧連網互動遊戲與即時搶答，在與巴比老師的遊戲中高頻開口。<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Interactive games and live quizzes for high-frequency output.</span><br>
+                        🔹 <b>Seesaw 親子連動：</b>回家後與家長進行情境英語對話錄音，一鍵回傳給 Joy 老師鼓勵！<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Audio dialogue tasks at home for direct feedback.</span>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold; color: var(--pyp-teal);">
                         🎒 主題 3：我的學校物品與文具探究<br>
-                        <span style="font-size:11px; font-weight:normal; color:#666;">(School Supplies)</span>
+                        <span style="font-size:11px; font-weight:normal; color:#666; font-style:italic;">(School Supplies)</span>
                     </td>
                     <td>
-                        <b>生活認知與聽力指令強化：</b><br>學習課桌椅、書包、鉛筆、橡皮擦等生活周遭物品名稱，並搭配「Stand up, Open your book」等高頻聽力與行動指令特訓。
+                        <b>生活認知與聽力指令強化：</b><br>
+                        學習課桌椅、書包、鉛筆、橡皮擦等生活周遭物品名稱，並搭配「Stand up, Open your book」等高頻聽力與行動指令特訓。<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Learning real-world objects while cementing response training for listening and action-oriented commands.</span>
                     </td>
                     <td>
-                        🔹 <b>Nearpod 虛擬實境：</b>帶領孩子透過 VR 虛擬實境參觀國外小學教室，進行跨國界的文化與物品探究。<br>
-                        🔹 <b>Epic! 跨學科閱讀：</b>搭配 Oxford 與學樂出版的精美數位校園繪本，聽、說、讀、寫多感官同步強化。
+                        🔹 <b>Nearpod 虛擬實境：</b>帶領孩子透過 VR 虛擬實境參觀國外小學教室，進行跨國界的文化探究。<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">VR virtual tours to explore international classrooms.</span><br>
+                        🔹 <b>Epic! 跨學科閱讀：</b>搭配 Oxford 與學樂精美繪本，聽說讀寫多感官同步強化。<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Cross-disciplinary books for multi-sensory skill reinforcement.</span>
                     </td>
                 </tr>
             </tbody>
@@ -346,21 +368,31 @@
         <div class="app-grid">
             <div class="app-card">
                 <div class="app-name">📚 Epic! 數位閱讀</div>
-                <div class="app-desc">全球最大兒童英語數位圖書館！配合課本發音與主題，精選跨學科英文繪本，讓孩子在課堂與家中隨時進行探究閱讀。</div>
+                <div class="app-desc">
+                    全球最大兒童英語數位圖書館！配合課本發音與主題，精選跨學科英文繪本，讓孩子在課堂與家中隨時進行探究閱讀。<br>
+                    <span class="app-desc-en">The world's largest digital library, offering curated English books aligned with core lessons for extended reading.</span>
+                </div>
             </div>
             <div class="app-card">
                 <div class="app-name">🎙️ Seesaw 成果牆</div>
-                <div class="app-desc">孩子的專屬數位美語舞台！透過錄音與口說任務，大膽秀出美語。家長用手機一點，一秒聽見孩子的驚人進步！</div>
+                <div class="app-desc">
+                    孩子的專屬數位美語舞台！透過錄音與口說任務，大膽秀出美語。家長用手機一點，一秒聽見孩子的驚人進步！<br>
+                    <span class="app-desc-en">A showcase platform for speaking tasks. Parents can instantly witness and hear their child's step-by-step progress online.</span>
+                </div>
             </div>
             <div class="app-card">
                 <div class="app-name">🎮 Nearpod 互動課堂</div>
-                <div class="app-desc">拒絕排排坐死聽課！課堂融入 Nearpod 智慧互動遊戲、3D 虛擬實境與即時問答，讓低段孩子在遊戲中高頻開口。</div>
+                <div class="app-desc">
+                    拒絕排排坐死聽課！課堂融入 Nearpod 智慧互動遊戲、3D 虛擬實境與即時問答，讓低段孩子在遊戲中高頻開口。<br>
+                    <span class="app-desc-en">Gamified learning sessions featuring 3D virtual reality tours and real-time polls to maximize high-frequency output.</span>
+                </div>
             </div>
         </div>
 
         <div class="cta-box">
             <h3 style="margin:0 0 10px 0; color:var(--uci-blue); font-size:18px;">🔥 2026 莊二街精緻小班名額爭奪戰 ── 線上搶位啟動</h3>
             <p style="font-size:13px; color:#555; margin:0 0 5px 0;">名額嚴格精緻限量！家長可直接點擊下方按鈕，一秒前往完成「線上電子定型化契約簽署」，為孩子鎖定搶位名額！</p>
+            <p style="font-size:11px; color:#777; font-style:italic; margin:0;">Strictly limited slots. Click below to proceed to the standard contract signing page to secure your registration.</p>
             <a href="contract.html">
                 <img src="Join now.jpg" alt="立即點擊搶位報名" class="cta-join-btn-img">
             </a>
