@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <!-- 🎯 全載具核心天線：加入最標準的縮放網頁視窗雷達，確保行動裝置完美適應 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>巴比美語 | Let's Go 1 國際文憑 PYP 探究美語班招生中</title>
     <style>
@@ -199,7 +200,7 @@
         /* 🎯 按鈕與底部大圖專屬排艙 */
         .bottom-media-舱 {
             text-align: center;
-            padding: 10px 40px 35px 40px;
+            padding: 10px 0 0 0; /* 底部內縮歸零，確保底圖緊貼左右 */
         }
 
         /* 🎯 智慧迷你按鈕：最大寬度鎖死為 135px */
@@ -209,7 +210,7 @@
             height: auto;
             cursor: pointer;
             transition: transform 0.2s, filter 0.2s;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             display: inline-block;
         }
 
@@ -218,14 +219,13 @@
             filter: brightness(1.08);
         }
 
-        /* 📸 壓軸底圖艙：寬度完美鎖定 400px */
+        /* 📸 壓軸底圖艙：寬度完美延伸至 100% 填滿左右，完全不留白 */
         .bottom-kids-img {
             width: 100%;
-            max-width: 400px;
+            max-width: 100%;
             height: auto;
-            border-radius: 8px;
             display: block;
-            margin: 0 auto;
+            margin: 0;
         }
 
         @media (max-width: 768px) {
@@ -236,8 +236,6 @@
             table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
             td { min-width: 200px; }
             th { min-width: 130px; }
-            .bottom-media-舱 { padding: 10px 15px 25px 15px; }
-            .bottom-kids-img { max-width: 100%; }
         }
     </style>
 </head>
@@ -250,11 +248,12 @@
     </div>
 
     <div class="ad-body">
+        <!-- 💡 PYP 國際特訓亮點艙 ── 完美對接中英文全名與全新去背商標圖檔 -->
         <div class="pyp-section">
             <div class="pyp-text">
-                <h3>🌍 國際學校等級 ｜ IB PYP 探究教學精神導入</h3>
+                <h3>🌍 國際學校等級 ｜ IB PYP 國際文憑小學項目 探究教學精神導入</h3>
                 <p>我們不只教孩子背英文，更引導孩子成為「探究者 (Inquirers)」。配合單元主題，啟發孩子的好奇心，用美語去探索世界、表達自我，從小建立適應未來的國際素養！</p>
-                <span style="font-size: 11px; color:#555; font-style:italic; display:block; margin-top:3px;">We guide kids to become active Inquirers. Driven by curiosity, students explore the world and express themselves in English, cultivating global competence from a young age!</span>
+                <span style="font-size: 11px; color:#555; font-style:italic; display:block; margin-top:3px;">We guide kids to become active Inquirers through the <b>IB Primary Years Programme (IB PYP)</b> framework. Driven by curiosity, students explore the world and express themselves in English, cultivating global competence from a young age!</span>
             </div>
             <img src="BOBBY ENGLISH SCHOOL_去背檔.png" alt="巴比美語補習班專屬去背標章" class="pyp-side-img">
         </div>
@@ -308,14 +307,15 @@
             </tbody>
         </table>
 
-        <div class="section-title">📘 Let's Go 1 × PYP 聽說讀寫數位教學進程安排 🎒</div>
-        <p style="font-size:13px; color:#666; margin-top:0;">巴比美語拒絕傳統死背！我們將課本單元與國際三大頂級教育 App 完美融合，落實探究式教學：</p>
+        <!-- 📘 深度中英對齊數位課表 ── 融入熱情、耐心、與親師生三方高頻互動 -->
+        <div class="section-title">📘 Let's Go 1 × IB PYP 聽說讀寫數位教學與愛心師生互動安排 🎒</div>
+        <p style="font-size:13px; color:#666; margin-top:0;">在巴比美語，我們堅持「以愛心、耐心與高頻互動為主，App 數位科技為輔」的教學核心：</p>
         <table>
             <thead>
                 <tr>
                     <th style="width: 24%;"><span class="zh-title">探究主題與進度</span><span class="en-title">PYP Theme & Units</span></th>
-                    <th style="width: 36%;"><span class="zh-title">聽說讀寫特訓內容</span><span class="en-title">Core Skills & Content</span></th>
-                    <th style="width: 40%;"><span class="zh-title">神級 App 搭配教學安排</span><span class="en-title">EdTech App Integration</span></th>
+                    <th style="width: 38%;"><span class="zh-title">以人為本：巴比老師的耐心與師生互動</span><span class="en-title">Teacher-Student Warm Interaction</span></th>
+                    <th style="width: 38%;"><span class="zh-title">神級 App 輔助教學與親師生連結</span><span class="en-title">EdTech App & Parent Connection</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -325,15 +325,14 @@
                         <span style="font-size:11px; font-weight:normal; color:#666; font-style:italic;">(Alphabet & Phonics)</span>
                     </td>
                     <td>
-                        <b>自然發音基礎與單字直覺拼讀：</b><br>
-                        從 A-Z 的正確字母發音、筆順，到進階 Phonics 基礎自然發音結合，讓低段孩子達到「見字能讀、聽音能拼」的直覺美語體質。<br>
-                        <span style="font-size:11px; color:#666; font-style:italic;">Mastering A-Z pronunciation and stroke order paired with foundational Phonics blending to build intuitive reading and spelling habits.</span>
+                        <b>🌟 Bobby 老師一對一耐心發音牽引：</b><br>
+                        對於剛接觸拼讀的孩子，Bobby 老師會用無比的愛心俯身傾聽，以「誇張的口形示範」與「趣味口訣」，一對一引導孩子大膽咬字。即使拼錯，老師也會給予最溫暖的眼神與鼓勵，直到孩子自信說出正確發音。<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">With absolute patience and heart, Teacher Bobby bends down to guide every child, using fun mouth-shaping and positive reinforcement to help hesitant beginners speak confidently.</span>
                     </td>
                     <td>
-                        🔹 <b>Epic! 探究閱讀：</b>精選全球初階發音有聲繪本，進行圖像與聲音的探究連結。<br>
-                        <span style="font-size:11px; color:#777; font-style:italic;">Audio picture books to bridge phonics sounds and imagery.</span><br>
-                        🔹 <b>Seesaw 成果牆：</b>孩子錄下自己的 Phonics 發音短片，建立個人數位發音資料庫！<br>
-                        <span style="font-size:11px; color:#777; font-style:italic;">Recording short clips to track phonetic milestones.</span>
+                        🔹 <b>Epic! 趣味繪本探索：</b>老師挑選色彩絢麗的自然發音繪本，帶孩子用小手指邊讀邊聽。<br>
+                        🔹 <b>Seesaw 成長聲音日記：</b>孩子在課堂錄下自己的 Phonics 發音。家長回家能隨時點擊，親耳聽見 Bobby 老師留下的讚美與孩子的進步！<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Seesaw serves as a warm digital audio diary where parents can hear Bobby's loving feedback and their child's progress.</span>
                     </td>
                 </tr>
                 <tr>
@@ -342,15 +341,14 @@
                         <span style="font-size:11px; font-weight:normal; color:#666; font-style:italic;">(Greetings & Dialogues)</span>
                     </td>
                     <td>
-                        <b>巴比老師的遊戲大膽說：</b><br>
-                        涵蓋早安問候、名字介紹、年齡詢問與教室常用美語。拒絕紙筆死背，讓孩子在最自然的生活情境中大方開口。<br>
-                        <span style="font-size:11px; color:#666; font-style:italic;">Immersive situational roleplay covering daily greetings, introductions, age, and classroom commands to bypass rote memorization.</span>
+                        <b>🌟 課堂擊掌與大方開口的遊戲舞台：</b><br>
+                        Bobby 老師拒絕冷冰冰的排排坐死背！他會在教室裡跑動，透過擊掌、驚訝的表情包、肢體遊戲與全體孩子高頻對話。在遊戲中，老師會耐心引導每一個害羞的孩子大方與身邊的同學打招呼，讓英文自然流露。<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Teacher Bobby actively moves around the room, using high-fives, playful body language, and high-frequency classroom games to ensure every child participates happily and naturally.</span>
                     </td>
                     <td>
-                        🔹 <b>Nearpod 互動課堂：</b>融入智慧連網互動遊戲與即時搶答，在與巴比老師的遊戲中高頻開口。<br>
-                        <span style="font-size:11px; color:#777; font-style:italic;">Interactive games and live quizzes for high-frequency output.</span><br>
-                        🔹 <b>Seesaw 親子連動：</b>回家後與家長進行情境英語對話錄音，一鍵回傳給 Joy 老師鼓勵！<br>
-                        <span style="font-size:11px; color:#777; font-style:italic;">Audio dialogue tasks at home for direct feedback.</span>
+                        🔹 <b>Nearpod 趣味互動遊戲：</b>融入智慧遊戲與搶答。老師會帶著孩子在螢幕前哈哈大笑，用最快樂、最沒有壓力的方式高頻開口。<br>
+                        🔹 <b>Seesaw 親師生共讀傳天線：</b>孩子回家與爸媽進行一小段生活問候英語對話錄音，Joy 老師會在線上給予超可愛的貼圖批改與暖心鼓勵！<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">Gamified interactive lessons on Nearpod and parental voice check-ins on Seesaw with personal, encouraging feedback from Teacher Joy.</span>
                     </td>
                 </tr>
                 <tr>
@@ -359,51 +357,53 @@
                         <span style="font-size:11px; font-weight:normal; color:#666; font-style:italic;">(School Supplies)</span>
                     </td>
                     <td>
-                        <b>生活認知與聽力指令強化：</b><br>
-                        學習課桌椅、書包、鉛筆、橡皮擦等生活周遭物品名稱，並搭配「Stand up, Open your book」等高頻聽力與行動指令特訓。<br>
-                        <span style="font-size:11px; color:#666; font-style:italic;">Learning real-world objects while cementing response training for listening and action-oriented commands.</span>
+                        <b>🌟 探究小偵探的互動引導：</b><br>
+                        老師會設計「魔法神秘箱」遊戲，讓孩子們蒙著眼睛觸摸文具，並用溫柔的聲音引導孩子去用美語提問與探究。老師扮演最可靠的引航者，在孩子找不到單字時，耐心地用拼圖或線索去啟發孩子自己說出正確答案。<br>
+                        <span style="font-size:11px; color:#666; font-style:italic;">Bobby guides children in a tactile "Mystery Box" game, patiently offering clues and visual prompts to encourage active inquiry over simple spoon-feeding.</span>
                     </td>
                     <td>
-                        🔹 <b>Nearpod 虛擬實境：</b>帶領孩子透過 VR 虛擬實境參觀國外小學教室，進行跨國界的文化探究。<br>
-                        <span style="font-size:11px; color:#777; font-style:italic;">VR virtual tours to explore international classrooms.</span><br>
-                        🔹 <b>Epic! 跨學科閱讀：</b>搭配 Oxford 與學樂精美繪本，聽說讀寫多感官同步強化。<br>
-                        <span style="font-size:11px; color:#777; font-style:italic;">Cross-disciplinary books for multi-sensory skill reinforcement.</span>
+                        🔹 <b>Nearpod VR 跨國教室探索：</b>老師帶領孩子透過 3D 虛擬實境，手牽手走入國外小學教室參觀，引發好奇心。<br>
+                        🔹 <b>Epic! 跨學科主題共讀：</b>師生一同閱讀世界校園主題繪本，聽、說、讀、寫多感官立體化同步強化。<br>
+                        <span style="font-size:11px; color:#777; font-style:italic;">VR virtual tours to satisfy global curiosity, combined with shared digital readings to complete our balanced sensory reinforcement.</span>
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="section-title">🚀 2026 三大頂級 EdTech 數位魔法晶片融入</div>
+        <div class="section-title">🚀 2026 三大頂級 EdTech 數位輔助與親師生三方對接</div>
         <div class="app-grid">
             <div class="app-card">
-                <div class="app-name">📚 Epic! 數位閱讀</div>
+                <div class="app-name">📚 Epic! 數位圖書館</div>
                 <div class="app-desc">
-                    全球最大兒童英語數位圖書館！配合課本發音與主題，精選跨學科英文繪本，讓孩子在課堂與家中隨時進行探究閱讀。<br>
-                    <span class="app-desc-en">The world's largest digital library, offering curated English books aligned with core lessons for extended reading.</span>
+                    <b>繪本共讀，開啟探究：</b>全球最大兒童英語有聲素材庫！配合 Bobby 老師的課堂單元，老師會親自挑選適合孩子的有聲繪本，讓孩子在課堂與家中隨時隨地開啟世界探索視野。<br>
+                    <span class="app-desc-en">The world's largest digital library, curated directly by Bobby to bridge classroom themes and home reading.</span>
                 </div>
             </div>
             <div class="app-card">
-                <div class="app-name">🎙️ Seesaw 成果牆</div>
+                <div class="app-name">🎙️ Seesaw 溫暖成果牆</div>
                 <div class="app-desc">
-                    孩子的專屬數位美語舞台！透過錄音與口說任務，大膽秀出美語。家長用手機一點，一秒聽見孩子的驚人進步！<br>
-                    <span class="app-desc-en">A showcase platform for speaking tasks. Parents can instantly witness and hear their child's step-by-step progress online.</span>
+                    <b>三方對接，愛心批改：</b>孩子的專屬數位舞台！透過口說與趣味任務，孩子大膽秀出英文。家長用手機一點，不僅一秒聽見孩子的驚人進步，更能即時看見 Bobby 與 Joy 老師留下的溫馨鼓勵與愛心貼圖！<br>
+                    <span class="app-desc-en">A personal showcase. Parents can instantly hear their child's step-by-step progress with personalized audio feedback from our teachers.</span>
                 </div>
             </div>
             <div class="app-card">
                 <div class="app-name">🎮 Nearpod 互動課堂</div>
                 <div class="app-desc">
-                    拒絕排排坐死聽課！課堂融入 Nearpod 智慧互動遊戲、3D 虛擬實境與即時問答，讓低段孩子在遊戲中高頻開口。<br>
-                    <span class="app-desc-en">Gamified learning sessions featuring 3D virtual reality tours and real-time polls to maximize high-frequency output.</span>
+                    <b>師生遊戲，趣味互動：</b>拒絕坐著死背！配合老師的肢體引導，Nearpod 智慧遊戲、3D 虛擬實境與即時互動問答，讓最害羞的孩子也能一邊大笑、一邊在課堂上高頻大膽開口。<br>
+                    <span class="app-desc-en">Gamified learning sessions featuring 3D virtual reality tours and interactive games to maximize natural output.</span>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- 🎯 壓軸極簡傳送艙（左右延伸 100% 完美對齊填滿，氣勢拉滿） -->
     <div class="bottom-media-舱">
+        <!-- 🔹 智慧縮小按鈕：對接全新且正確之 join now 1.png 檔案 -->
         <a href="contract.html">
             <img src="join now 1.png" alt="立即線上簽約鎖定名額" class="cta-join-mini-btn">
         </a>
         
+        <!-- 📸 壓軸底圖艙：kids.png 寬度延伸 100% 填滿左右，完美大合照不留白 -->
         <img src="kids.png" alt="巴比美語學員快樂探究合照" class="bottom-kids-img">
     </div>
 </div>
